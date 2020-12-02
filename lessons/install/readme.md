@@ -47,7 +47,10 @@ import sklearn
 
 Did you install Python 2 or 3? Why?  
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> I have three versions of python: 
+>> * 3.8.2 (via jupyter and via ipython 7.18.1)
+>> * 3.7.4 (via the command line)
+>> * 3.7.0 (via spyder), 
 
 ### Q2. Which Python Version Installed   
 
@@ -55,7 +58,7 @@ In the Terminal:
 
 `python3 --version`
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Python 3.8.2
 
  
 
