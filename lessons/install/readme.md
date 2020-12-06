@@ -49,7 +49,7 @@ Did you install Python 2 or 3? Why?
 
 >> I have three versions of python: 
 >> * 3.8.2 (via jupyter and via ipython 7.18.1)
->> * 3.7.4 (via "python --version" on the command line, but 3.8.2 via "python3 --version" on the command line)
+>> * 3.8.5 (via command line)
 >> * 3.7.0 (via spyder), 
 
 ### Q2. Which Python Version Installed   
