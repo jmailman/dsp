@@ -91,19 +91,22 @@ Elvis Presley had a twin brother who died at birth.  What is the probability tha
 #### Bayesian analysis of the Elvis-twin-brother question
 To solve this problem about Elvis's twin brother, consider the space of probabilities involving all twins in general within the entire space of possibilities and types of twins within this.
 
-Since the categories of fraternal and identical twins are mutually exclusive and also exhaustive of twins generally, the probability of being a twin is simply the probability of being either a fraternal or identical twin, which is the sum of the two probabilities. This makes the problem of identical-twin likelihood one of computing the proportion that identical twins take up within the space that twins take up.
+Since the categories of fraternal and identical twins are mutually exclusive and also exhaustive of twins generally, the probability of being a twin is simply the probability of being either a fraternal or identical twin, which is the sum of those two probabilities. This makes the problem of identical-twin likelihood one of computing the proportion that identical twins take up within the space that twins take up.
 
-Let **P(F)** be the probability of being a _fraternal_ twin, **P(D)** be the probability of being an _identical_ twin, and **P(T)** be the probability of just being a _twin_.
+Let **P(F)** be the probability of being a _fraternal_ twin (1/125), **P(D)** be the probability of being an _identical_ twin (1/300), and **P(T)** be the probability of just being a _twin_.
 
 **P(T) = P(F) + P(D)** = 1/125 + 1/300 = 425/37500 = 17/1500
 
-The problem is asking for P(D|T), that is, the probability that Elvis's brother was an identical twin, given that he was a twin.
+The problem is asking for P(D|T), that is, the probability that Elvis's brother was an _identical_ twin, given that he was a twin.
 
 
-Bayes's theorem states:
+Using Bayes theorem:
 
 
 **P(D|T)  =   P(T|D)P(D) / P(T)** = 1*1/300 / (17/1500) = 5/17 = 0.29
+
+$P(D|T)$  =  $\frac{(P|D)P(D)}{P(T)}$ =  $\frac{\frac{1}{1} \frac{1}{300}}{\frac{1}{125}+\frac{1}{300}}$ = $\frac{5}{17}$ = $0.294$ = $29.4\%$
+
 
 ---
 
