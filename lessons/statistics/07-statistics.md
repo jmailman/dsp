@@ -22,11 +22,13 @@ Complete the following exercises along with the questions in this file. Some can
 
 Communicate the problem, how you solved it, and the solution, within each of the following [markdown](https://guides.github.com/features/mastering-markdown/) files. (You can include code blocks and images within markdown.)
 
-## <a name="section-b"></a>2.  Why We Are Using Think Stats 
+## <a name="section-b"></a>
 
-The stats exercises have been chosen to introduce/solidify some relevant statistical concepts related to data science.  The solutions for these exercises are available in the [ThinkStats repository on GitHub](https://github.com/AllenDowney/ThinkStats2).  You should focus on understanding the statistical concepts, python programming and interpreting the results.  If you are stuck, review the solutions and recode the python in a way that is more understandable to you. 
+2.  Why We Are Using Think Stats
 
-For example, in the first exercise, the author has already written a function to compute Cohen's D.  **You could import it, or you could write your own code to practice python and develop a deeper understanding of the concept.** 
+The stats exercises have been chosen to introduce/solidify some relevant statistical concepts related to data science.  The solutions for these exercises are available in the [ThinkStats repository on GitHub](https://github.com/AllenDowney/ThinkStats2).  You should focus on understanding the statistical concepts, python programming and interpreting the results.  If you are stuck, review the solutions and recode the python in a way that is more understandable to you.
+
+For example, in the first exercise, the author has already written a function to compute Cohen's D.  **You could import it, or you could write your own code to practice python and develop a deeper understanding of the concept.**
 
 Think Stats uses a higher degree of python complexity from the python tutorials and introductions to python concepts, and that is intentional to prepare you for the bootcamp.  
 
@@ -34,7 +36,7 @@ Think Stats uses a higher degree of python complexity from the python tutorials 
 
 ---
 
-## <a name="section-c"></a>3.  Instructions for Cloning the Repo 
+## <a name="section-c"></a>3.  Instructions for Cloning the Repo
 Using the [code referenced in the book](https://github.com/AllenDowney/ThinkStats2), follow the step-by-step instructions below.  
 
 **Step 1. Create a directory on your computer where you will do the prework.  Below is an example:**
@@ -76,17 +78,32 @@ This problem presents a robust example of actual vs biased data.  As a data scie
 This questions asks you to examine the function that produces random numbers.  Is it really random?  A good way to test that is to examine the pmf and cdf of the list of random numbers and visualize the distribution.  If you're not sure what pmf is, read more about it in Chapter 3.  
 
 ### Q4. [Think Stats Chapter 5 Exercise 1](5-1-blue_men.md) (normal distribution of blue men)
-This is a classic example of hypothesis testing using the normal distribution.  The effect size used here is the Z-statistic. 
+This is a classic example of hypothesis testing using the normal distribution.  The effect size used here is the Z-statistic.
 
 
 
-### Q5. Bayesian (Elvis Presley twin) 
+### Q5. Bayesian (Elvis Presley twin)
 
 Bayes' Theorem is an important tool in understanding what we really know, given evidence of other information we have, in a quantitative way.  It helps incorporate conditional probabilities into our conclusions.
 
 Elvis Presley had a twin brother who died at birth.  What is the probability that Elvis was an identical twin? Assume we observe the following probabilities in the population: fraternal twin is 1/125 and identical twin is 1/300.  
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+#### Bayesian analysis of the Elvis-twin-brother question
+To solve this problem about Elvis's twin brother, consider the space of probabilities involving all twins in general within the entire space of possibilities and types of twins within this.
+
+Since the categories of fraternal and identical twins are mutually exclusive and also exhaustive of twins generally, the probability of being a twin is simply the probability of being either a fraternal or identical twin, which is the sum of the two probabilities. This makes the problem of identical-twin likelihood one of computing the proportion that identical twins take up within the space that twins take up.
+
+Let **P(F)** be the probability of being a _fraternal_ twin, **P(D)** be the probability of being an _identical_ twin, and **P(T)** be the probability of just being a _twin_.
+
+**P(T) = P(F) + P(D)** = 1/125 + 1/300 = 425/37500 = 17/1500
+
+The problem is asking for P(D|T), that is, the probability that Elvis's brother was an identical twin, given that he was a twin.
+
+
+Bayes's theorem states:
+
+
+**P(D|T)  =   P(T|D)P(D) / P(T)** = 1*1/300 / (17/1500) = 5/17 = 0.29
 
 ---
 
@@ -117,7 +134,7 @@ In the theoretical world, all data related to an experiment or a scientific prob
 
 Read Allen Downey's [Think Bayes](http://greenteapress.com/thinkbayes/) book.  It is available online for free, or you can buy a paper copy if you would like.
 
-[<img src="img/think_bayes.png" title="Think Bayes"/>](http://greenteapress.com/thinkbayes/) 
+[<img src="img/think_bayes.png" title="Think Bayes"/>](http://greenteapress.com/thinkbayes/)
 
 ---
 
