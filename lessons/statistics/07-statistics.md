@@ -103,7 +103,8 @@ The problem is asking for P(D|T), that is, the probability that Elvis's brother 
 Using Bayes theorem:
 
 
-**P(D|T)  =   P(T|D)P(D) / P(T)** = 1*1/300 / (17/1500) = 5/17 = 0.29
+**P(D|T)  =   P(T|D)P(D) / P(T)** = 1 * 1/300 / (17/1500) = 5/17 = 0.29
+=  **29%**
 
 $P(D|T)$  =  $\frac{(P|D)P(D)}{P(T)}$ =  $\frac{\frac{1}{1} \frac{1}{300}}{\frac{1}{125}+\frac{1}{300}}$ = $\frac{5}{17}$ = $0.294$ = $29.4\%$
 
@@ -113,8 +114,7 @@ $P(D|T)$  =  $\frac{(P|D)P(D)}{P(T)}$ =  $\frac{\frac{1}{1} \frac{1}{300}}{\frac
 ### Q6. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
-
+Bayesian and frequentist approaches can be viewed as complementary with respect to each other. They are two contrasting approaches to inference, based on different interpretations of probability. The frequentist approach assumes infinite hypothetical replications converging on fixed probabilities that pre-exist. In the Bayesian approach, however, probabilities are subjective, and are computed conditionally from information available. Thus in the Bayesian approach different probabilities of the same event are not incorrect. In the Bayesian approach, unknown paramaters are treated as random variables and inferences arises from the posterior probability distribution of these. A Bayesian approach may be preferable with small sample sizes or with very complex models. Bayesian approaches include Markov chain and Monte Carlo methods. A frequentist approach emphasizes estimating functions. Quantities such as parameters of a model are not probabilities but rather are estimated by frequency measurements.
 ---
 
 ## <a name="section-e"></a>5.  Optional Exercises
