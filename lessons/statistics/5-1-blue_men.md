@@ -56,6 +56,11 @@ To compare the BMG specs with the population, we need to convert from feet and i
 def ft_inch_to_cm(ft, inches):
     return (ft*12 + inches) * 2.54
 ```
+```{python}
+blueMG_high = dist.cdf( ft_inch_to_cm(5, 11) )
+blueMG_high
+```
+
 Output (percentile for **lower** end of BMG range):
 ```
 0.48963902786483265
