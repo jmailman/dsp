@@ -49,6 +49,7 @@ thinkplot.Hist(nums_hist, align='left', width=.01, alpha=.05)
 thinkplot.Config(xlabel='random numbers', ylabel='Count')
 ```
 ![histogram](img/4-2_histogram.png)
+
 It looks fairly evenly distributed--at least the *un*eveness looks random; it lacks an obvious pattern.
 
 Let's look at the _cumulative density function_ (CDF)
