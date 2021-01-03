@@ -51,6 +51,8 @@ Output:
 ```
 0.1586552539314574
 ```
+
+### Blue Man Group compared to the population
 To compare the BMG specs with the population, we need to convert from feet and inches into centemeters.
 ```{python}
 def ft_inch_to_cm(ft, inches):
@@ -84,6 +86,8 @@ Output (the difference):
 ```
 0.34274683763147457
 ```
+
+### The bottom line
 
 5'10" is taller than 48% of males and 6'1" is taller than 82% of U.S. males. The difference in percentages is the percentage that lies in the range from 5'10" to 6'1", and this is **34%** (of the male population in the U.S.)
 
