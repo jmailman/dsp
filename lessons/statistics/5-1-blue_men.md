@@ -36,7 +36,6 @@ As a sanity check, we can verify that this distribution has the mean and std we 
 
 ```{python}
 dist.mean(), dist.std()
-
 ```
 Output:
 ```
@@ -79,7 +78,6 @@ To discover what proportion of the population is within Blue Man Group's range, 
 
 ```{python}
 blueMG_high - blueMG_low
-
 ```
 
 Output (the difference):
